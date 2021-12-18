@@ -1,7 +1,11 @@
 from django.test import TestCase
+from django.urls import resolve
+
+from news_site.views import home_page
 
 
-class SmokeTest(TestCase):
+class HomePageTest(TestCase):
 
-    def test_bad_maths(self):
-        self.assertEqual(1+1, 3)
+    def test_site_resolves(self):
+        found = resolve('/')
+        self.assertEqual(found.func, home_page)
