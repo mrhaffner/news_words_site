@@ -22,3 +22,11 @@ class NewVisitorTest(unittest.TestCase):
         self.assertIn('Trending News Words', self.browser.title)
         header_text = self.browser.find_element_by_tag_name('h1')
         self.assertIn('Trending News Words', header_text)
+
+        # Stevesie notices a list of the most popular words
+        # appearing in the news
+
+        ##loop through all items and make sure they are not empty?
+
+        # Stevesie also sees a two lists showing word frequency
+        # on right wing and left wing news sites 

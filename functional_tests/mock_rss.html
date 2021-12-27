@@ -1,0 +1,485 @@
+<html>
+  <script
+    type="module"
+    src="chrome-extension://jdkknkkbebbapilgoeccciglkfbmbnfm/hook.js"
+  ></script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Fox News - powered by FeedBurner</title>
+    <link
+      href="//feedburner.google.com/fb/lib/stylesheets/undohtml.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="//feedburner.google.com/fb/feed-styles/bf30.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Fox News   "
+      href="http://feeds.feedburner.com/foxnews/latest"
+    />
+    <script
+      type="text/javascript"
+      src="//feedburner.google.com/fb/feed-styles/bf30.js"
+    ></script>
+  </head>
+  <body
+    id="browserfriendly"
+    onload="jsFeedUrl='http://feeds.feedburner.com/foxnews/latest';loadSubscribeAreaUltra('standard');go_decoding()"
+  >
+    <div id="cometestme" style="display: none">&amp;</div>
+    <div id="bodycontainer">
+      <div id="bannerblock">
+        <a href="https://www.foxnews.com" title="Link to original website"
+          ><img
+            src="https://global.fncstatic.com/static/orion/styles/img/fox-news/logos/fox-news-desktop.png"
+            id="feedimage"
+            alt="Fox News"
+        /></a>
+        <h1>Fox News</h1>
+        <h2>syndicated content powered by FeedBurner</h2>
+        <p style="clear: both"></p>
+      </div>
+      <div id="bodyblock">
+        <div id="subscribenow" class="subscribeblock action">
+          <div id="subscribe-userchoice" style="display: none">
+            <p id="subscribeLink"><a href="#">...</a></p>
+            <p id="resetLink">
+              Reset this favorite;
+              <a href="#" onclick="return clearUserchoice('standard')"
+                >show all Subscribe options</a
+              >
+            </p>
+          </div>
+          <div id="subscribe-options">
+            <h3>Subscribe Now!</h3>
+            <h4>...with web-based news readers. Click your choice below:</h4>
+            <div id="webbased">
+              <a
+                href="https://add.my.yahoo.com/rss?url=http://feeds.feedburner.com/foxnews/latest"
+                onclick="this.href = subscribeNow(this.href,'My Yahoo!');return true"
+                ><img
+                  src="https://sp.yimg.com/j/assets/ipt/addtomyyahoo.gif"
+                  width="91"
+                  height="17"
+                  alt="addtomyyahoo4" /></a
+              ><br /><a
+                class="img"
+                href="https://feedly.com/#subscription/feed/http://feeds.feedburner.com/foxnews/latest"
+                onclick="this.href = subscribeNow(this.href,'Feedly');return true"
+                ><img
+                  src="https://s3.feedly.com/feedburner/feedly.png"
+                  alt="Subscribe with Feedly" /></a
+              ><a
+                href="https://www.netvibes.com/subscribe.php?url=http://feeds.feedburner.com/foxnews/latest"
+                onclick="this.href=subscribeNow(this.href,'Netvibes');return true"
+                ><img
+                  src="https://www.netvibes.com/img/add2netvibes.gif"
+                  alt="Add to netvibes" /></a
+              ><br /><a
+                class="img"
+                href="https://www.subtome.com/#/subscribe?feeds=http://feeds.feedburner.com/foxnews/latest"
+                onclick="this.href = subscribeNow(this.href,'SubToMe');return true"
+                ><img
+                  src="https://www.subtome.com/subtome-feedburner.png"
+                  alt="Subscribe with SubToMe"
+              /></a>
+            </div>
+            <h4>...with other readers:</h4>
+            <form action="https://feedburner.google.com" method="get">
+              <select
+                onchange="location.href=subscribeNowUltra('feed:http://feeds.feedburner.com/foxnews/latest',this.options[this.selectedIndex].value)"
+              >
+                <option
+                  value="--"
+                  disabled=""
+                  selected=""
+                  style="padding-left: 0"
+                >
+                  (Choose Your Reader)
+                </option>
+                <option value="FeedDemon">FeedDemon</option>
+                <option value="NetNewsWire">NetNewsWire</option>
+                <option value="NewsFire">NewsFire</option>
+                <option value="NewsGator Outlook Edition">
+                  NewsGator Outlook Edition
+                </option>
+                <option value="RSSOwl">RSSOwl</option>
+                <option value="shrook">Shrook</option>
+                <option value="USM">
+                  Universal Subscription Mechanism (USM)
+                </option>
+              </select>
+            </form>
+            <p></p>
+          </div>
+          <input id="savechoice" type="hidden" value="standard" />
+        </div>
+        <p class="about">
+          FeedBurner makes it easy to receive content updates in My Yahoo!,
+          Newsgator, Bloglines, and other news readers.
+        </p>
+        <p class="about">
+          <a href="https://support.google.com/feedburner/answer/79408"
+            >Learn more about syndication and FeedBurner...</a
+          >
+        </p>
+        <h3 id="currentFeedContent">Current Feed Content</h3>
+        <ul>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/nfl-week-16-2021-schedule-scores-updates"
+                >NFL Week 16 schedule, scores, updates and more</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:47:55 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              There are three weeks left to the 2021 NFL regular season and the
+              league is limping its way to the end.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a href="https://www.foxnews.com/media/gowdy-hope-christmas"
+                >Gowdy: Hold on to the hope of Christmas</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:46:34 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Fox News host Trey Gowdy devoted his monologue on Sunday to the
+              feelings of “hope” that accompany Christmas ahead of the new year.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/jaguars-super-bowl-champion-coach-targeted-head-coaching-role"
+                >Jaguars have Super Bowl champion coach along with 2 others
+                targeted for head coaching role</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:30:58 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Jacksonville is ready to vet candidates for their head coaching
+              vacancy, starting with three names piquing their interest.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/us/fauci-removing-masks-on-airplanes-not-something-we-should-even-be-considering"
+                >Fauci: Removing masks on airplanes &amp;apos;not something we
+                should even be considering&amp;apos;</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:26:02 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Dr. Anthony Fauci said that taking masks off while on an airplane
+              is 'not something we should even be considering.'
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/chiefs-rout-stumbling-steelers-36-10-to-clinch-afc-west"
+                >Chiefs rout stumbling Steelers 36-10 to clinch AFC West</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:20:28 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Patrick Mahomes threw for 258 yards and three touchdowns, Byron
+              Pringle caught two of the TD passes, and the Kansas City Chiefs
+              beat the Pittsburgh Steelers 36-10 on Sunday to clinch their sixth
+              consecutive AFC West title.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/bears-get-late-magic-from-nick-foles-to-top-seahawks-25-24"
+                >Bears get late magic from Nick Foles to top Seahawks 25-24</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:16:31 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Jimmy Graham caught a 15-yard touchdown pass from Nick Foles with
+              1:01 remaining, Damiere Byrd made an acrobatic reception for the
+              2-point conversion, and the Chicago Bears beat the Seattle
+              Seahawks 25-24 on Sunday.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/raiders-cling-to-playoff-hopes-with-17-13-win-over-denver"
+                >Raiders cling to playoff hopes with 17-13 win over Denver</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 01:12:14 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Josh Jacobs rushed for 129 yards and the Las Vegas Raiders came
+              from behind to defeat the Denver Broncos 17-13 on Sunday to stay
+              relevant in the AFC playoff picture.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/us/california-man-allegedly-tortured-killed-girlfriend-on-christmas-eve"
+                >California man allegedly tortured, killed girlfriend, 24, on
+                Christmas Eve</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 00:36:12 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              A 21-year-old man in Southern California allegedly tortured his
+              girlfriend before killing her on Christmas Eve, according to
+              authorities.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/media/new-york-times-nikole-hannah-jones-parents-kids-education"
+                >NY Times&amp;apos; Nikole Hannah-Jones says she
+                &amp;apos;doesn&amp;apos;t understand&amp;apos; why parents
+                should have say in kids&amp;apos; education</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Mon, 27 Dec 2021 00:17:05 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              New York Times journalist Nikole Hannah-Jones insisted that
+              parents shouldn’t decide what can be taught schools.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/bucs-antonio-brown-rips-media-suspension"
+                >Bucs&amp;apos; Antonio Brown rips media after suspension
+                question: &amp;apos;You guys are all drama&amp;apos;</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 23:55:02 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Tampa Bay Buccaneers star Antonio Brown had a big game against the
+              Carolina Panthers on Sunday as he helped the team clinch their
+              first NFC South title since 2007.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/bengals-joe-burrow-ravens-coach-rout"
+                >Bengals&amp;apos; Joe Burrow claps back at Ravens coach after
+                20-point rout</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 23:34:40 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Cincinnati Bengals quarterback Joe Burrow fired back at Baltimore
+              Ravens defensive coordinator Wink Martindale after their win on
+              Sunday.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/us/u-s-navy-warship-remains-port-after-covid-19-breaks-out-among-100-immunized-crew"
+                >U.S. Navy warship remains in port after COVID-19 breaks out
+                among &amp;apos;100% immunized&amp;apos; crew</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 23:12:20 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              A U.S. Navy warship held off on deploying to South America after
+              an outbreak of COVID-19 cases among its vaccinated crew.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/us/roe-v-wade-lawyer-dies-as-supreme-court-reconsiders-landmark-abortion-case"
+                >Roe v. Wade lawyer dies, former student says; as Supreme Court
+                reconsiders landmark abortion case</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 22:45:21 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Sarah Weddington, one of the attorneys who argued the landmark
+              abortion case Roe v. Wade in 1973, passed away at the age of 76, a
+              former student said Sunday. Her reported death comes while the
+              Supreme Court is considering a case with the potential to reverse
+              the landmark abortion case.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/bills-cole-beasley-fined-covid-rules-report"
+                >Bills’ Cole Beasley fined nearly $100,000 for breaking COVID
+                rules: report</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 22:37:15 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Buffalo Bills wide receiver Cole Beasley caught COVID but can’t
+              seem to catch a break.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/wilson-jets-hold-on-to-edge-lawrence-jaguars-26-21"
+                >Wilson, Jets hold on to edge Lawrence, Jaguars 26-21</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 22:24:18 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Zach Wilson threw a touchdown pass and ran for another to outduel
+              Trevor Lawrence, and the short-handed New York Jets used a
+              goal-line stand at the end of the game to hold on and beat the
+              Jacksonville Jaguars 26-21 on Sunday.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/punt-return-td-lifts-rams-past-vikings-playoff-spot"
+                >Punt return TD lifts Rams past Vikings to get playoff spot</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 22:20:42 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Brandon Powell returned a punt 61 yards for a touchdown in the
+              third quarter to lift Los Angeles into the playoffs as the Rams
+              pulled out a 30-23 victory over the Minnesota Vikings.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/sports/burrows-525-yards-4-tds-power-bengals-past-ravens-41-21"
+                >Burrow’s 525 yards, 4 TDs power Bengals past Ravens 41-21</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 22:16:25 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Joe Burrow threw for a franchise-record 525 yards and four
+              touchdowns, and the Cincinnati Bengals took sole possession of
+              first place in the AFC North with a 41-21 win over the depleted
+              Baltimore Ravens on Sunday.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/media/media-meltdown-dad-said-lets-go-brandon-biden"
+                >Mainstream media fume over dad saying &amp;apos;Let&amp;apos;s
+                Go Brandon&amp;apos; to Biden: &amp;apos;Vulgar,&amp;apos;
+                &amp;apos;right-wing slur&amp;apos;</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 21:56:18 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              Several reporters and journalists were outraged over an Oregon
+              father using the phrase “Let’s Go Brandon” to President Biden on
+              Christmas Eve.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/us/1619-project-founder-says-shes-not-a-professional-educator-despite-being-college-faculty-member"
+                >1619 Project founder says she&amp;apos;s not a professional
+                educator despite being college faculty member</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 21:55:06 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              1619 Project founder Nikole Hannah-Jones said that she's not a
+              “professional educator" despite being a tenured faculty member at
+              Howard University.
+            </div>
+          </li>
+          <li xmlns:dc="http://purl.org/dc/elements/1.1/" class="regularitem">
+            <h4 class="itemtitle">
+              <a
+                href="https://www.foxnews.com/us/pentagon-to-cut-stateside-cost-of-living-stipend-for-thousands-of-troops-in-2022"
+                >Pentagon to cut stateside cost-of-living stipend for thousands
+                of troops in 2022</a
+              >
+            </h4>
+            <h5 class="itemposttime">
+              <span>Posted:</span>Sun, 26 Dec 2021 21:50:07 GMT
+            </h5>
+            <div class="itemcontent" name="decodeable">
+              The Department of Defense (DoD) announced last week that troops in
+              15 metropolitan areas and 21 non-metropolitan counties in the
+              continental United States will be cut off from a cost-of-living
+              allowance starting Jan. 1.
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <a href="https://feedburner.google.com"
+          ><img
+            src="//feedburner.google.com/fb/feed-styles/images/footer_logo.gif"
+        /></a>
+        <p>
+          FeedBurner delivers the world's subscriptions wherever they need to
+          go. Publish a feed for text or podcasting?
+          <a href="https://feedburner.google.com" target="_blank"
+            ><br />You should try FeedBurner today</a
+          >.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
