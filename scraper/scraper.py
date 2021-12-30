@@ -1,6 +1,8 @@
 from django.core.exceptions import ValidationError
 from scraper.models import RSS_Page
 
+#create live scraper FT?!?!?
+
 #scraper gets list of websites to scrape from - passed on init?? Json? DB? YAML?
 
 #scraper iterates over those websites
@@ -8,8 +10,8 @@ from scraper.models import RSS_Page
 
 class Scraper():
     
-    def save_rss_page(html, url) -> None:
-        rss_page = RSS_Page(html=html, url=url)
+    def save_rss_page(html: str, url: str, website_name: str) -> None:
+        rss_page = RSS_Page(html=html, url=url, website_name=website_name)
         try:
             rss_page.full_clean()
             rss_page.save()
